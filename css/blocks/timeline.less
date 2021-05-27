@@ -1,0 +1,160 @@
+// main: ../style.less
+
+.timeline {
+    margin: 4.2rem auto 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 768px;
+
+    position: relative;
+
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 1;
+
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100%;
+        background-color: @black;
+
+        @media @mobile-sm {
+            display: none;
+        }
+    }
+
+    @media @mobile-sm {
+        margin: 3rem auto;
+    }
+}
+
+.timeline__col {
+    width: 50%;
+
+    &--left {
+        text-align: right;
+        padding-right: 3.2rem;
+
+        @media @mobile-sm {
+            text-align: center;
+            padding-right: 0;
+        }
+    }
+
+    &--right {
+        padding-left: 3.2rem;
+
+        @media @mobile-sm {
+            margin-top: 2rem;
+            text-align: center;
+            padding-left: 0;
+        }
+    }
+
+    @media @mobile-sm {
+        width: 100%;
+    }
+}
+
+.timeline__title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: @black;
+    text-transform: uppercase;
+
+    margin-bottom: 2.6rem;
+
+    @media @mobile-sm {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.timeline__item {
+    margin-bottom: 2.6rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.timeline__date {
+    display: block;
+    font-size: .94rem;
+    color: @black;
+    text-decoration: underline;
+
+    margin-bottom: .8rem;
+}
+
+.timeline__subtitle {
+    font-size: 1.06rem;
+    font-weight: 700;
+    color: @black;
+    margin-bottom: .4rem;
+}
+
+.timeline__position {
+    font-size: .94rem;
+    font-weight: 300;
+    font-style: italic;
+    color: @black;
+
+    line-height: 1.5;
+    margin-bottom: .9rem;
+
+    &--regular {
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+.timeline__text {
+    font-size: .8rem;
+    font-weight: 300;
+    color: @black;
+
+    line-height: 1.5;
+}
+
+.timeline__awards {
+    display: flex;
+    margin-bottom: 2rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media @mobile-sm {
+        text-align: left;
+    }
+}
+
+.timeline__awards-content {
+    margin-left: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
